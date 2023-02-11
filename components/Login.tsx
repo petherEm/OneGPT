@@ -19,6 +19,18 @@ const Login = () => {
       >
         Sign In to use BetterGPT
       </button>
+      <div className="mt-10 flex items-center justify-center">
+        <h1>
+          Developed by{" "}
+          <a
+            href="https://www.piotrmaciejewski.com"
+            target="_blank"
+            className="text-red-500 font-bold"
+          >
+            Piotr.
+          </a>
+        </h1>
+      </div>
     </div>
   );
 };
