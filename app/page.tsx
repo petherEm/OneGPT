@@ -4,11 +4,10 @@ import { SunIcon, BoltIcon, ExclamationTriangleIcon } from "@heroicons/react/24/
 
 const HomePage = () => {
   return (
-    <div className="text-violet-200 flex mx-auto flex-col items-center min-h-screen px-2">
-      <h1 className="text-violet-400 text-5xl font-bold mb-20">
-        vaBank<span className="text-red-500">.</span>
-        <span className="">GPT</span>
-      </h1>
+    <div className="text-slate-100 flex mx-auto flex-col items-start min-h-screen px-2">
+      <h1 className="text-3xl md:text-5xl font-bold mt-10 mb-20">Hi, try our better version of ChatGPT <br /> and enjoy your conversation!</h1>
+      
+    
 
       <div className="flex space-x-4">
         <div>

@@ -24,12 +24,12 @@ const Sidebar = () => {
     <div className="p-2 flex flex-col md:min-h-screen text-white max-w-[350px]">
       <div className="flex-1 space-y-10">
         {session && (
-          <div className="flex items-center  space-x-4">
+          <div className="flex items-center space-x-4">
             <h1>Hi, {session.user?.name}</h1>
             <img
               onClick={() => signOut()}
               src={session.user?.image!}
-              className="rounded-full h-12 w-12 cursor-pointer mx-auto mb-2 hover:opacity-50"
+              className="rounded-full h-10 w-10 cursor-pointer mx-auto mb-2 hover:opacity-50"
               alt=""
             />
           </div>
@@ -39,9 +39,10 @@ const Sidebar = () => {
 
           <NewChat />
 
-          <div className="hidden sm:inline">
+          <div className="flex flex-col">
             {/* ModelSelection */}
             <ModelSelection />
+            <p className="text-[10px]">Select AI model</p>
           </div>
 
           <div className="flex flex-col space-y-2 my-2">
@@ -55,6 +56,18 @@ const Sidebar = () => {
               <ChatRow key={chat.id} id={chat.id} />
             ))}
           </div>
+        </div>
+        <div className="hidden mt-10 md:flex items-center justify-center">
+          <h1>
+            Developed by{" "}
+            <a
+              href="https://www.piotrmaciejewski.com"
+              target="_blank"
+              className="text-red-500 font-bold"
+            >
+              Piotr.
+            </a>
+          </h1>
         </div>
       </div>
     </div>

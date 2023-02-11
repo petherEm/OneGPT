@@ -25,10 +25,10 @@ export default async function RootLayout({
           {!session ? (
             <Login />
           ) : (
-            <div className="flex flex-col md:flex-row bg-gradient-to-l from-gray-700 via-gray-900 to-black">
+            <div className="flex flex-col md:flex-row bg-gradient-to-l from-gray-800 via-gray-900 to-black">
               {/* Sidebar  */}
 
-              <div className="mt-10 flex flex-col items-center md:items-start md:h-screen overflow-y-auto overflow-x-hidden md:min-h-[20rem] md:min-w-[450px]">
+              <div className="p-2 md:p-4 mt-10 flex flex-col items-center md:items-start md:h-screen overflow-y-auto overflow-x-hidden md:min-h-[20rem] md:min-w-[400px]">
                 <Sidebar />
               </div>
 
@@ -36,7 +36,7 @@ export default async function RootLayout({
 
               <ClientProvider />
 
-              <div className="mt-20 flex justify-center w-full">{children}</div>
+              <div className="mt-8 md:mt-20 flex justify-center w-full">{children}</div>
             </div>
           )}
         </SessionProvider>
